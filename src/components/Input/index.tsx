@@ -7,6 +7,7 @@ import { Container } from './styles';
 type InputProps = {
   name: string;
   icon?: typeof Component;
+  placeholder: string;
 };
 
 const Input = ({ name, icon: Icon, ...rest }: InputProps) => {
