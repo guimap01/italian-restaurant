@@ -7,15 +7,7 @@ import { FoodsContainer } from './styles';
 import { useCallback } from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-
-type FoodType = {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  available: boolean;
-  image: string;
-};
+import { FoodType } from 'entities/Food';
 
 const Dashboard = () => {
   const [foods, setFoods] = useState<Array<FoodType>>([]);
